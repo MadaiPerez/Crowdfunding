@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartSeed</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./img/foteer.png">
+    <link rel="stylesheet" href="./img/hero.jpg">
+    <link rel="stylesheet" href="./img/logonav.jpeg">
+    <link rel="stylesheet" href="./js/app.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="general">
+    <header>
+        <nav class="w-[90%] max-lg:w-screen mx-auto flex justify-between max-lg:flex-wrap items-center ">
+
+            <!-- logo -->
+
+            <div class="max-lg:order-1">
+                <a class="w-16 max-lg:m-4" href=""><img src="./img/logonav.jpeg" alt=""></a>
+            </div>
+
+
+
+            <!-- link de referencia  -->
+            <div id="menunav" class="h-fit w-full flex items-center px-5 mx-auto max-lg:hidden max-lg:order-3 ">
+
+                <ul class="flex items-center max-lg:flex-col gap-[4vw] mx-auto ">
+                    <li>
+                        <a href="../buscar_campañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
+                    </li>
+                    <li>
+                        <a href="./nosotros.html" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
+                    </li>
+                    <li>
+                        <a href="" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
+                    </li>
+                    <li>
+                        <a href="" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- botone de iniciar secion user y menu en dispositivos moviles -->
+
+
+            <div class="flex items-center gap-4 px-3 max-lg:order-2">
+
+
+                <button id="userA"
+                    class="bg-gradient-to-r from-[#A2D988]/50 to-[#66994E]/10 rounded-full h-11 w-28 text-[#206A5D]">
+                    iniciar Sesion
+                </button>
+
+                <!-- user -->
+                <div id="userB" class="dropdown dropdown-end hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="Tailwind CSS Navbar component"
+                                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                    </div>
+                    <ul tabindex="0"
+                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li id="logOut"><a>Logout</a></li>
+                    </ul>
+                </div>
+
+
+                <button id="botonav" class="lg:hidden">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </button>
+
+
+            </div>
+
+
+
+        </nav>
+    </header>
+
+    <div class="nosotros">
+        <img class="h-auto max-w-full" src="./img/nosotros.png" alt="image description"></img>
+        <div class="sobre justify-center">
+            <h2 class="text-4xl font-bold dark:text-white tracking-wide text-center">Sobre Nosotros</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8  mx-auto max-w-screen-xl px-4">
+                <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./img/quienes somos.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Visión</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Misión: Nuestra misión es conectar a personas apasionadas con proyectos innovadores. 
+                            Facilitamos la colaboración y el apoyo financiero para que las ideas creativas se conviertan en realidad. 
+                            Creemos en la democratización del financiamiento,
+                            permitiendo que cualquier persona contribuya al éxito de proyectos significativos.
+                        </p>
+                    </div>
+                </div>
+            
+                
+                <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg " src="./img/Default_imagen_para_pagina_de_donaciones_apartado_de_nosotros_3.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Misión</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Imaginamos un mundo donde cada proyecto con potencial reciba el respaldo necesario. 
+                            Queremos ser la plataforma líder en crowdfunding, donde los emprendedores, artistas y creadores encuentren el apoyo que necesitan para hacer realidad sus sueños. 
+                            Visualizamos una comunidad global de colaboradores comprometidos con la innovación y el cambio positivo.
+                        </p>
+                    </div>  
+                </div>
+                
+                
+                
+                <div class="mx-auto row-span-2 col-span-2">
+                    <a href="#" class="flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 bg-gray-700">
+                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./img/nuestro_camino.jpeg" alt="">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SOBRE NOSOTROS</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Somos una empresa con 4 años de recorrido, una empresa comprometida a ayudar a quienes más lo necesitan
+                                somos 100% transparentes con nuestros usuarios, llegamos a todas partes del mundo, con inicios en El Salvador, nuestra plataforma está para todo el
+                                que lo necesite, para lo que necesite, pudiendo entrar en cualquier país y recibir directamente la ayuda o apoyo otorgado.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    
+
+    <h2 class="text-4xl font-extrabold dark:text-white text-center my-8">Algunos Testimonios</h2>
+
+<div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
+            <p class="my-4">If you care for your time, I hands down would go with this."</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Bonnie Green</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
+            </div>
+        </figcaption>    
+    </figure>
+    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
+            <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Roberta Casas</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+            </div>
+        </figcaption>    
+    </figure>
+    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
+            <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Jese Leos</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+            </div>
+        </figcaption>    
+    </figure>
+    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
+            <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Joseph McFall</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
+            </div>
+        </figcaption>    
+    </figure>
+</div>
+
+
+
+
+<!-- footer -->
+
+<footer class="footer p-10 space-x-auto max-lg:justify-items-center">
+    <aside>
+        <img src="./img/foteer.png" alt="">
+        <p class="text-[#206A5D]">StarSeed.<br> 2024</p>
+    </aside>
+    <nav class="flex flex-col ">
+        <h6 class="footer-title text-[#81B214]">Recaudacion de Fondos</h6>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Tecnologia</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Salud</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Emergencia</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Animales</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Educacion</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Animales</a>
+    </nav>
+    <nav class="flex flex-col ">
+        <h6 class="footer-title text-[#81B214]">Mas Informacion</h6>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Como Funciona</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Porque Nosotros</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Pregustas Frecuentes</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Soporte Tecnico</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Contactanos</a>
+    </nav>
+    <nav class="flex flex-col ">
+        <h6 class="footer-title self-center text-[#81B214]">Legal</h6>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Terminos de uso</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Privacy policy</a>
+        <a class="link link-hover self-center text-[#206A5D] font-medium">Cookie policy</a>
+    </nav>
+</footer>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
