@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campañas</title>
+    <title>Mis Campañas</title>
 
 
     <!-- font awesome cdn  -->
@@ -21,36 +21,37 @@
 
 </head>
 
-<body class=" bg-white">
+<body class="bg-white ">
+
+
 
 
 
     <!-- navbar -->
-
     <header>
         <nav class="w-[90%] max-lg:w-screen mx-auto flex justify-between max-lg:flex-wrap items-center ">
 
             <!-- logo -->
 
-            <div class="max-lg:order-1 p-1">
-                <a class="w-16 max-lg:m-4" href="index.html"><img src="img/logonav.jpeg" alt=""></a>
+            <div class="p-1 max-lg:order-1">
+                <a class="w-16 max-lg:m-4" href="index.php"><img src="img/logonav.jpeg" alt=""></a>
             </div>
 
             <!-- link de referencia  -->
 
-            <div id="menunav" class="h-fit w-full flex items-center px-5 mx-auto max-lg:hidden max-lg:order-3 ">
+            <div id="menunav" class="flex items-center w-full px-5 mx-auto h-fit max-lg:hidden max-lg:order-3 ">
                 <ul class="flex items-center max-lg:flex-col gap-[4vw] mx-auto ">
                     <li>
-                        <a href="buscar_campañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
+                        <a href="buscar_campañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
                     </li>
                     <li>
-                        <a href="sobreNosotos.html" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
+                        <a href="sobreNosotos.php" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
                     </li>
                     <li>
-                        <a href="misCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
+                        <a href="misCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
                     </li>
                     <li>
-                        <a href="IniciarCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
+                        <a href="IniciarCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +66,7 @@
                 </button>
 
                 <!-- user -->
-                <div id="userB" class="dropdown dropdown-end hidden">
+                <div id="userB" class="hidden dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component"
@@ -94,44 +95,104 @@
 
 
 
-    <div class="flex flex-col items-center">
 
-        <h1 class="capitalize text-4xl font-medium text-[#206A5D]">Configuracion</h1>
 
-        <div class="flex gap-24 mt-8">
-            <button>Cuenta</button>
-            <button>Bancaria</button>
+
+    <!-- botones de panel, mensjajes y tranferencias -->
+
+    <div class="w-full bg-white my-11">
+        <div class="flex items-center justify-center gap-36 max-lg:flex max-lg:flex-col max-lg:gap-8">
+            <button class="btn btn-active bg-[#CFD8D7] text-black hover:bg-white"><i
+                    class="fa-solid fa-house"></i>Panel</button>
+            <button class="btn btn-active bg-[#CFD8D7] text-black hover:bg-white"><i
+                    class="fa-solid fa-building-columns"></i>Tranferencias</button>
+            <button class="btn btn-active bg-[#CFD8D7] text-black hover:bg-white"><i
+                    class="fa-solid fa-message"></i>Mensajes</button>
         </div>
-        <div class="avatar mt-8">
-            <div class="w-24 rounded-full">
-                <img src="img/logonav.jpeg" />
-            </div>
-        </div>
-
-
-        <div class="flex flex-col items-center gap-4 mt-8">
-            <h1 class="capitalize text-xl font-medium">jean hanna</h1>
-            <hr class="w-80">
-            <h1 class="capitalize text-xl font-medium">jean hanna</h1>
-            <hr class="w-80">
-            <h1 class="capitalize text-xl font-medium">jean hanna</h1>
-            <hr class="w-80">
-            <h1 class="capitalize text-xl font-medium">jean hanna</h1>
-            <hr class="w-80 text-black">
-            <h1 class="capitalize text-xl font-medium">jean hanna</h1>
-            <hr class="w-80">
-
-
-
-
-        
-        </div>
-
     </div>
 
 
+    <!-- dasboard de proyectos -->
+
+    <div class="flex">
+        <div class="flex flex-col items-center order-2 w-full gap-8 mt-16 bg-blue">
 
 
+            <!-- primer proyecto -->
+
+            <div class="">
+
+                <div>
+                    <button class="btn btn-sm btn-active bg-[#CFD8D7] text-black hover:bg-white"><a href="campaña.php">Ver</a></button>
+                    <button class="btn btn-sm btn-active bg-[#CFD8D7] text-black hover:bg-white">Compartir
+                        Recaudacion</button>
+                </div>
+
+
+                <h1 class="capitalize my-6  font-medium text-[#206A5D]">
+                    proyectos
+                </h1>
+
+                <progress class="w-56 my-4 progress progress-success" value="70" max="100"></progress>
+
+                <div>
+                    <button class="text-xs btn btn-xs">Editar</button>
+                    <button class="text-xs btn btn-xs ">Compartir Enlace</button>
+                </div>
+            </div>
+
+
+            <!-- segundo proyecto -->
+
+            <div class="">
+            <div>
+                    <button class="btn btn-sm btn-active bg-[#CFD8D7] text-black hover:bg-white"><a href="campaña.php">Ver</a></button>
+                    <button class="btn btn-sm btn-active bg-[#CFD8D7] text-black hover:bg-white">Compartir
+                        Recaudacion</button>
+                </div>
+
+
+                <h1 class="capitalize my-6  font-medium text-[#206A5D]">
+                    proyectos
+                </h1>
+
+                <progress class="w-56 my-4 progress progress-success" value="70" max="100"></progress>
+
+                <div>
+                    <button class="text-xs btn btn-xs">Editar</button>
+                    <button class="text-xs btn btn-xs ">Compartir Enlace</button>
+                </div>
+            </div>
+
+
+            <div class="">
+
+            <div>
+                    <button class="btn btn-sm btn-active bg-[#CFD8D7] text-black hover:bg-white"><a href="campaña.php">Ver</a></button>
+                    <button class="btn btn-sm btn-active bg-[#CFD8D7] text-black hover:bg-white">Compartir
+                        Recaudacion</button>
+                </div>
+
+                <h1 class="capitalize my-6  font-medium text-[#206A5D]">
+                    proyectos
+                </h1>
+
+                <progress class="w-56 my-4 progress progress-success" value="70" max="100"></progress>
+
+                <div>
+                    <button class="text-xs btn btn-xs">Editar</button>
+                    <button class="text-xs btn btn-xs ">Compartir Enlace</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="order-1 bg-blue max-lg:hidden">
+            <img class="" src="img/enredadera.png" alt="">
+        </div>
+        <div class="order-3 bg-blue max-lg:hidden">
+            <img src="img/enredadera2.png" alt="">
+        </div>
+    </div>
 
 
 
@@ -140,7 +201,7 @@
     <!-- footer -->
 
 
-    <footer class="footer p-10 space-x-auto max-lg:justify-items-center">
+    <footer class="p-10 footer space-x-auto max-lg:justify-items-center">
         <aside>
             <img src="img/foteer.png" alt="">
             <p class="text-[#206A5D]">StarSeed.<br> 2024</p>

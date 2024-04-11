@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre nosotros</title>
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -23,31 +23,30 @@
 <body class="bg-white">
 
     <!-- navbar -->
-
     <header>
         <nav class="w-[90%] max-lg:w-screen mx-auto flex justify-between max-lg:flex-wrap items-center ">
 
             <!-- logo -->
 
-            <div class="max-lg:order-1 p-1">
-                <a class="w-16 max-lg:m-4" href="index.html"><img src="img/logonav.jpeg" alt=""></a>
+            <div class="p-1 max-lg:order-1">
+                <a class="w-16 max-lg:m-4" href="index.php"><img src="img/logonav.jpeg" alt=""></a>
             </div>
 
             <!-- link de referencia  -->
 
-            <div id="menunav" class="h-fit w-full flex items-center px-5 mx-auto max-lg:hidden max-lg:order-3 ">
+            <div id="menunav" class="flex items-center w-full px-5 mx-auto h-fit max-lg:hidden max-lg:order-3 ">
                 <ul class="flex items-center max-lg:flex-col gap-[4vw] mx-auto ">
                     <li>
-                        <a href="buscar_campañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
+                        <a href="buscar_campañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
                     </li>
                     <li>
-                        <a href="sobreNosotos.html" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
+                        <a href="sobreNosotos.php" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
                     </li>
                     <li>
-                        <a href="misCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
+                        <a href="misCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
                     </li>
                     <li>
-                        <a href="IniciarCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
+                        <a href="IniciarCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +61,7 @@
                 </button>
 
                 <!-- user -->
-                <div id="userB" class="dropdown dropdown-end hidden">
+                <div id="userB" class="hidden dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component"
@@ -91,8 +90,9 @@
 
 
 
-    <h1 class="text-center text-4xl capitalize my-11">en construcción</h1>
-    <div class="w-full h-full flex justify-center">
+
+    <h1 class="text-4xl text-center capitalize my-11">en construcción</h1>
+    <div class="flex justify-center w-full h-full">
 
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/OBWz8AG8tuU?si=nOlSTJLRq3IQ5hzs?start=0&autoplay=1"
@@ -108,7 +108,7 @@
     <!-- footer -->
 
 
-    <footer class="footer p-10 space-x-auto max-lg:justify-items-center">
+    <footer class="p-10 footer space-x-auto max-lg:justify-items-center">
         <aside>
             <img src="img/foteer.png" alt="">
             <p class="text-[#206A5D]">StarSeed.<br> 2024</p>

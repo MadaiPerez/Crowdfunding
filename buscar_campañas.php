@@ -18,7 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-<body>
+<body class="bg-white">
 
 
     <!-- navbar -->
@@ -28,25 +28,25 @@
 
             <!-- logo -->
 
-            <div class="max-lg:order-1 p-1">
-                <a class="w-16 max-lg:m-4" href="index.html"><img src="img/logonav.jpeg" alt=""></a>
+            <div class="p-1 max-lg:order-1">
+                <a class="w-16 max-lg:m-4" href="index.php"><img src="img/logonav.jpeg" alt=""></a>
             </div>
 
             <!-- link de referencia  -->
 
-            <div id="menunav" class="h-fit w-full flex items-center px-5 mx-auto max-lg:hidden max-lg:order-3 ">
+            <div id="menunav" class="flex items-center w-full px-5 mx-auto h-fit max-lg:hidden max-lg:order-3 ">
                 <ul class="flex items-center max-lg:flex-col gap-[4vw] mx-auto ">
                     <li>
-                        <a href="buscar_campañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
+                        <a href="buscar_campañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
                     </li>
                     <li>
-                        <a href="sobreNosotos.html" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
+                        <a href="sobreNosotos.php" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
                     </li>
                     <li>
-                        <a href="misCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
+                        <a href="misCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
                     </li>
                     <li>
-                        <a href="IniciarCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
+                        <a href="IniciarCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                 </button>
 
                 <!-- user -->
-                <div id="userB" class="dropdown dropdown-end hidden">
+                <div id="userB" class="hidden dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component"
@@ -100,7 +100,7 @@
 
     <aside>
         <h2>Filtros</h2>
-        <ul role="list" class="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
+        <ul role="list" class="pb-6 space-y-4 text-sm font-medium text-gray-900 border-b border-gray-200">
             <li><a href="#">Tecnologia</a></li>
             <li><a href="#">Arte y Creatividad</a></li>
             <li><a href="#">Diseño</a></li>
@@ -118,140 +118,140 @@
     <main>
         <div id="campaignsList">
             <!-- Aquí se mostrarán las campañas -->
-            <div class="contenedor inline-grid grid-cols-3 gap-4">
+            <div class="inline-grid grid-cols-3 gap-4 contenedor">
                 <div class="tarjetas">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="max-w-sm overflow-hidden rounded shadow-lg">
                         <img class="w-full"
                             src="https://news.microsoft.com/wp-content/uploads/prod/sites/41/2016/01/Educacion_CREA_02.jpg"
                             alt="Sunset in the mountains">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Estudio en Tecnologia</div>
-                            <p class="text-gray-700 text-base">
+                            <div class="mb-2 text-xl font-bold">Estudio en Tecnologia</div>
+                            <p class="text-base text-gray-700">
                                 ayudame a continuar mi estudio en tecnología
                             </p>
                             <p>$1,000 US</p>
-                            <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                            <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                             <button class="bg-green-500 rounded-lg boton">Dona ya!</button>
                         </div>
                         <div class="px-6 pt-4 pb-2">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Tecnologia</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#Tecnologia</span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Estudio</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#Estudio</span>
                         </div>
                     </div>
                 </div>
                 <div class="tarjetas">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="max-w-sm overflow-hidden rounded shadow-lg">
                         <img class="w-full"
                             src="https://www.shutterstock.com/image-photo/creativity-education-people-concept-group-260nw-693809029.jpg"
                             alt="Sunset in the mountains">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Me encanta Dibujar</div>
-                            <p class="text-gray-700 text-base">
+                            <div class="mb-2 text-xl font-bold">Me encanta Dibujar</div>
+                            <p class="text-base text-gray-700">
                                 ayudame a que pueda seguir haciendo lo que mas me gusta, dibujar, te pido colaboracion
                                 de corazón
                             </p>
                             <p>$1,000 US</p>
-                            <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                            <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                             <button class="bg-green-500 rounded-lg boton">Dona ya!</button>
                         </div>
                         <div class="px-6 pt-4 pb-2">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#dibujo</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#dibujo</span>
                         </div>
                     </div>
                 </div>
                 <div class="tarjetas">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="max-w-sm overflow-hidden rounded shadow-lg">
                         <img class="w-full"
                             src="https://cdn-cjpme.nitrocdn.com/RBveHUhgbLfgOUOOlhRIgWHSMTdPvbOz/assets/images/optimized/rev-9d49715/mediactiu.com/wp-content/uploads/2021/04/Por-que-necesito-contratar-los-servicios-de-disen%CC%83o-grafico.jpg"
                             alt="Sunset in the mountains">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">colaboracion para diseño</div>
-                            <p class="text-gray-700 text-base">
+                            <div class="mb-2 text-xl font-bold">colaboracion para diseño</div>
+                            <p class="text-base text-gray-700">
                                 ayudame a convertirme en un diseñador de interiores brindandome tu apoyo
                             </p>
                             <p>$1,000 US</p>
-                            <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                            <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                             <button class="bg-green-500 rounded-lg boton">Dona ya!</button>
                         </div>
                         <div class="px-6 pt-4 pb-2">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#photography</span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#travel</span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#winter</span>
                         </div>
                     </div>
                 </div>
                 <div class="tarjetas">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="max-w-sm overflow-hidden rounded shadow-lg">
                         <img class="w-full"
                             src="https://imagenes.eltiempo.com/files/image_1200_600/uploads/2020/09/29/5f73309d28451.jpeg"
                             alt="Sunset in the mountains">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Ayudame a estudiar</div>
-                            <p class="text-gray-700 text-base">
+                            <div class="mb-2 text-xl font-bold">Ayudame a estudiar</div>
+                            <p class="text-base text-gray-700">
                                 brindame tu apoyo para que mis hijos puedan seguir estudiando, soy madre soltera y
                                 quiero que ellos sean profesionales algun dia, ayudame por favor
                             </p>
                             <p>$1,000 US</p>
-                            <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                            <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                             <button class="bg-green-500 rounded-lg boton">Dona ya!</button>
                         </div>
                         <div class="px-6 pt-4 pb-2">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#photography</span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#travel</span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#winter</span>
                         </div>
                     </div>
                 </div>
                 <div class="tarjetas">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="max-w-sm overflow-hidden rounded shadow-lg">
                         <img class="w-full"
                             src="https://i0.wp.com/encontraste.com.mx/wp-content/uploads/2021/06/CANCER.jpg?fit=768%2C479&ssl=1"
                             alt="Sunset in the mountains">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Salud de mi abuela</div>
-                            <p class="text-gray-700 text-base">
+                            <div class="mb-2 text-xl font-bold">Salud de mi abuela</div>
+                            <p class="text-base text-gray-700">
                                 ayudame a reunir para medicamentos, la salud de mi familiar depende de ello y son caros
                             </p>
                             <p>$1,000 US</p>
-                            <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                            <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                             <button class="bg-green-500 rounded-lg boton">Dona ya!</button>
                         </div>
                         <div class="px-6 pt-4 pb-2">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ayudame
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#ayudame
                                 a salvarla</span>
                         </div>
                     </div>
                 </div>
                 <div class="tarjetas">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div class="max-w-sm overflow-hidden rounded shadow-lg">
                         <img class="w-full" src="https://i.ytimg.com/vi/Zbfn9k6iZFM/maxresdefault.jpg"
                             alt="Sunset in the mountains">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Fundacion de animales</div>
-                            <p class="text-gray-700 text-base">
+                            <div class="mb-2 text-xl font-bold">Fundacion de animales</div>
+                            <p class="text-base text-gray-700">
                                 ayudame con mi fundacion de rescate de animales, a que pueda seguir llevando mas ayuda y
                                 alegría a sus corazones puedes ayudar desde $1.
 
                             </p>
                             <p>$1,000 US</p>
-                            <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                            <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                             <button class="bg-green-500 rounded-lg boton">Dona ya!</button>
                         </div>
                         <div class="px-6 pt-4 pb-2">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Mascotas</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#Mascotas</span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Rescate</span>
+                                class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#Rescate</span>
                         </div>
                     </div>
                 </div>
@@ -267,7 +267,7 @@
     </main>
     <!-- footer -->
 
-    <footer class="footer p-10 space-x-auto max-lg:justify-items-center">
+    <footer class="p-10 footer space-x-auto max-lg:justify-items-center">
         <aside>
             <img src=".img/foteer.png" alt="">
             <p class="text-[#206A5D]">StarSeed.<br> 2024</p>

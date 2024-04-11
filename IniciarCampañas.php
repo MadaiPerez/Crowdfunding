@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicia Tu Caampaña</title>
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -29,25 +29,25 @@
 
             <!-- logo -->
 
-            <div class="max-lg:order-1 p-1">
-                <a class="w-16 max-lg:m-4" href="index.html"><img src="img/logonav.jpeg" alt=""></a>
+            <div class="p-1 max-lg:order-1">
+                <a class="w-16 max-lg:m-4" href="index.php"><img src="img/logonav.jpeg" alt=""></a>
             </div>
 
             <!-- link de referencia  -->
 
-            <div id="menunav" class="h-fit w-full flex items-center px-5 mx-auto max-lg:hidden max-lg:order-3 ">
+            <div id="menunav" class="flex items-center w-full px-5 mx-auto h-fit max-lg:hidden max-lg:order-3 ">
                 <ul class="flex items-center max-lg:flex-col gap-[4vw] mx-auto ">
                     <li>
-                        <a href="buscar_campañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
+                        <a href="buscar_campañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
                     </li>
                     <li>
-                        <a href="sobreNosotos.html" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
+                        <a href="sobreNosotos.php" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
                     </li>
                     <li>
-                        <a href="misCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
+                        <a href="misCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
                     </li>
                     <li>
-                        <a href="IniciarCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
+                        <a href="IniciarCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +62,7 @@
                 </button>
 
                 <!-- user -->
-                <div id="userB" class="dropdown dropdown-end hidden">
+                <div id="userB" class="hidden dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component"
@@ -92,83 +92,96 @@
 
 
 
+
     <!-- form de inicio de campaña -->
 
     <div class="">
 
 
-        <div class="w-fit max-lg:w-screen mx-auto">
-            <form class="flex flex-col items-center gap-8 py-16 px-3 max-lg:px-1 bg-[#CFD8D7] rounded-lg " action="" method="post">
+        <div class="mx-auto w-fit max-lg:w-screen">
+            <?php
+            include("base/registrodecampaña.php");
+            ?>
+
+
+
+            <form class="flex flex-col items-center gap-8 py-16 px-3 max-lg:px-1 bg-[#CFD8D7] rounded-lg " action="misCampañas.php"
+                method="post" enctype="multipart/form-data">
 
                 <!-- titulo -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
-                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Titulo de la campaña</label>
-                    <input class="w-[40vw] max-lg:w-[60vw] rounded-lg bg-white" type="text">
+                <div class="flex flex-col items-center gap-4 text-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium">Titulo de la campaña</label>
+                    <input class="w-[40vw] max-lg:w-[60vw] rounded-lg bg-white" name="titulo" type="text"
+                        placeholder="Ingres un Titulo">
                 </div>
+
 
                 <!-- descripcion -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Descripcion</label>
-                    <textarea class="max-lg:w-[95%] rounded-lg bg-white  " name="" id="" cols="60" rows="10"></textarea>
+                    <textarea class="max-lg:w-[95%] rounded-lg bg-white  " name="descrip" id="" cols="60"
+                        rows="10"></textarea>
 
                 </div>
 
+
                 <!-- money -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Objetivo
                         Financiamiento</label>
-                    <input class="w-[40vw] max-lg:w-[60vw] rounded-lg bg-white" type="number">
+                    <input class="w-[40vw] max-lg:w-[60vw] rounded-lg bg-white" name="dinero" objetivo type="number">
                 </div>
 
                 <!-- tiempo de campaña -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Duracion de la campaña</label>
-                    <input class="rounded-lg px-3 bg-white" type="date" name="" id="">
+                    <input class="px-3 bg-white rounded-lg" type="month" name="fecha" id="">
                 </div>
+
 
                 <!-- categorias -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Categorias</label>
                     <div>
-                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">
-                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">
-                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">
-                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">                      
+                        <label for="cate">Tecnologia</label>
+                      <input class="bg-white" type="radio" placeholder="Tecnologia" name="catego" id="cate">                     
                     </div>
 
                 </div>
 
                 <!-- imagen -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Imagen principal</label>
-                    <input class="rounded-lg bg-white px-3 py-3 max-lg:px-0 max-lg:w-screen" type="file" name="" id="">
+                    <input class="px-3 py-3 bg-white rounded-lg max-lg:px-0 max-lg:w-screen" type="file" name="img" id="">
                 </div>
 
                 <!-- video -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Video *opcional</label>
-                    <input class="rounded-lg bg-white px-3 py-3 max-lg:px-0 max-lg:w-screen" type="file" name="" id="">
-                </div>
+                    <input class="px-3 py-3 bg-white rounded-lg max-lg:px-0 max-lg:w-screen" type="file" name="vid" id="">
+                </div> 
 
 
                 <!-- recompensa -->
 
-                <div class="flex flex-col gap-4 text-center items-center">
+                <div class="flex flex-col items-center gap-4 text-center">
                     <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Recompensas</label>
-                    <textarea class="rounded-lg max-lg:w-[95%] bg-white " name="" id="" cols="60" rows="10"></textarea>
+                    <textarea class="rounded-lg max-lg:w-[95%] bg-white " name="gif" id="" cols="60" rows="10"></textarea>
 
 
                 </div>
 
 
 
+                <input class="bg-gradient-to-r from-[#A2D988]/50 to-[#66994E]/10 text-white btn" type="submit"
+                    name="Sutmi" value="Guardar">
 
 
 
@@ -194,7 +207,7 @@
     <!-- footer -->
 
 
-    <footer class="footer p-10 space-x-auto max-lg:justify-items-center">
+    <footer class="p-10 footer space-x-auto max-lg:justify-items-center">
         <aside>
             <img src="img/foteer.png" alt="">
             <p class="text-[#206A5D]">StarSeed.<br> 2024</p>

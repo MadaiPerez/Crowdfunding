@@ -25,31 +25,30 @@
 
 
     <!-- navbar -->
-
     <header>
         <nav class="w-[90%] max-lg:w-screen mx-auto flex justify-between max-lg:flex-wrap items-center ">
 
             <!-- logo -->
 
-            <div class="max-lg:order-1 p-1">
-                <a class="w-16 max-lg:m-4" href="index.html"><img src="img/logonav.jpeg" alt=""></a>
+            <div class="p-1 max-lg:order-1">
+                <a class="w-16 max-lg:m-4" href="index.php"><img src="img/logonav.jpeg" alt=""></a>
             </div>
 
             <!-- link de referencia  -->
 
-            <div id="menunav" class="h-fit w-full flex items-center px-5 mx-auto max-lg:hidden max-lg:order-3 ">
+            <div id="menunav" class="flex items-center w-full px-5 mx-auto h-fit max-lg:hidden max-lg:order-3 ">
                 <ul class="flex items-center max-lg:flex-col gap-[4vw] mx-auto ">
                     <li>
-                        <a href="buscar_campañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
+                        <a href="buscar_campañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Buscar Campañas</a>
                     </li>
                     <li>
-                        <a href="sobreNosotos.html" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
+                        <a href="sobreNosotos.php" class=" hover:text-gray-500 text-[#206A5D] ">Sobre nosotros</a></a>
                     </li>
                     <li>
-                        <a href="misCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
+                        <a href="misCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">Mis Campañas</a>
                     </li>
                     <li>
-                        <a href="IniciarCampañas.html" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
+                        <a href="IniciarCampañas.php" class=" hover:text-gray-500 text-[#206A5D] ">iniciar Campaña</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +63,7 @@
                 </button>
 
                 <!-- user -->
-                <div id="userB" class="dropdown dropdown-end hidden">
+                <div id="userB" class="hidden dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component"
@@ -93,14 +92,15 @@
 
 
 
+
     <!-- secion quienes somos -->
 
 
 
 
 
-    <div class="hero min-h-screen shadow-2xl">
-        <div class="hero-content p-0 flex-col lg:flex-row">
+    <div class="min-h-screen shadow-2xl hero">
+        <div class="flex-col p-0 hero-content lg:flex-row">
 
             <!-- imagen hero -->
             <img src="img/hero.jpg" class="max-w-md rounded-lg max-lg:w-screen " />
@@ -109,7 +109,7 @@
 
                 <!-- secion de texto -->
 
-                <section class="font-medium text-black space-y-8 mt-6">
+                <section class="mt-6 space-y-8 font-medium text-black">
                     <P>Starseed es más que una plataforma de crowdfunding; somos una comunidad impulsada por la pasión y
                         la
                         innovación, con raíces profundas en El Salvador y una visión global. Nacimos con el propósito de
@@ -145,7 +145,7 @@
 
     <!-- pasos para iniciar una campaña -->
 
-    <div class="text-center mt-14 py-8 shadow-lg ">
+    <div class="py-8 text-center shadow-lg mt-14 ">
 
         <h1 class="capitalize text-4xl text-[#81B214]">Como iniciar una campaña?</h1>
         <br>
@@ -156,7 +156,7 @@
 
 
 
-            <div class="mx-16 max-lg:mx-4 space-y-8 max-lg:space-y-16">
+            <div class="mx-16 space-y-8 max-lg:mx-4 max-lg:space-y-16">
 
 
                 <!-- primer paso -->
@@ -170,7 +170,7 @@
 
 
                     <div class="basis-2/3">
-                        <p class="line-clamp-7 text-start  text-black font-medium text-wrap ">Busca el botón
+                        <p class="font-medium text-black line-clamp-7 text-start text-wrap ">Busca el botón
                             "Registrarse" o "Crear cuenta". Por lo
                             general, se encuentra en la esquina superior derecha de la página principal.
                             Haz clic en el botón "Registrarse" y se abrirá un formulario de registro.
@@ -188,13 +188,13 @@
 
 
 
-                <div class="flex justify-center space-x-28 max-lg:space-x-4  max-lg:flex-col max-lg:space-y-8">
+                <div class="flex justify-center space-x-28 max-lg:space-x-4 max-lg:flex-col max-lg:space-y-8">
                     <div class="basis-1/3">
                         <i class="fa-solid fa-comments fa-2xl text-[#81B214] align-bottom"></i>
                     </div>
 
                     <div class="basis-2/3">
-                        <p class="line-clamp-7 text-start text-black font-medium ">Explora las causas: Navega por las
+                        <p class="font-medium text-black line-clamp-7 text-start ">Explora las causas: Navega por las
                             diferentes categorías de
                             causas que apoyamos, desde ayuda humanitaria hasta conservación del medio ambiente.
                             Encuentra una causa que te apasione y descubre las organizaciones que están trabajando en
@@ -211,13 +211,13 @@
 
                 <!-- tercero paso -->
 
-                <div class="flex justify-center space-x-28 max-lg:space-x-4  max-lg:flex-col max-lg:space-y-8">
+                <div class="flex justify-center space-x-28 max-lg:space-x-4 max-lg:flex-col max-lg:space-y-8">
                     <div class="basis-1/3">
                         <i class="fa-solid fa-hand-holding-dollar fa-2xl text-[#81B214] align-bottom"></i>
                     </div>
 
                     <div class="basis-2/3">
-                        <p class="line-clamp-7 text-start text-black font-medium ">para promover tu proyecto y aceptar
+                        <p class="font-medium text-black line-clamp-7 text-start ">para promover tu proyecto y aceptar
                             donaciones en línea.
                             Asegúrate de incluir información detallada sobre tu causa, el impacto que esperas lograr y
                             cómo se utilizarán los fondos donados.</p>
@@ -227,13 +227,13 @@
 
                 <!-- cuarto paso -->
 
-                <div class="flex justify-center space-x-28 max-lg:space-x-4  max-lg:flex-col max-lg:space-y-8">
+                <div class="flex justify-center space-x-28 max-lg:space-x-4 max-lg:flex-col max-lg:space-y-8">
                     <div class="basis-1/3">
                         <i class="fa-solid fa-heart fa-2xl text-[#81B214] align-bottom"></i>
                     </div>
 
                     <div class="basis-2/3">
-                        <p class="line-clamp-7 text-start text-black font-medium ">Ayuda a aumentar la visibilidad de
+                        <p class="font-medium text-black line-clamp-7 text-start ">Ayuda a aumentar la visibilidad de
                             los proyectos
                             compartiéndolos en tus redes sociales y entre tus contactos. Cuantas más personas conozcan
                             un proyecto, mayores serán las posibilidades de que se alcance la meta de financiamiento.
@@ -253,8 +253,8 @@
     <!-- Descubre campañas que te pueden interesar -->
 
 
-    <div class="shadow mt-8">
-        <h1 class="text-center text-secondary text-3xl font-medium ">Descubre campañas que te pueden interesar</h1>
+    <div class="mt-8 shadow">
+        <h1 class="text-3xl font-medium text-center text-secondary ">Descubre campañas que te pueden interesar</h1>
 
         <button
             class="bg-gradient-to-r from-[#A2D988]/50 to-[#66994E]/10 rounded-full h-11 w-28 flex justify-center items-center ml-36 my-6 max-lg:mx-auto text-[#206A5D] font-medium  ">
@@ -263,7 +263,7 @@
 
 
         <div
-            class="flex justify-center max-lg:flex-col max-lg:w-screen max-lg:space-x-0  max-lg:space-y-4 space-x-4  mb-28">
+            class="flex justify-center space-x-4 max-lg:flex-col max-lg:w-screen max-lg:space-x-0 max-lg:space-y-4 mb-28">
 
             <!-- proyecto destacado 1 -->
 
@@ -277,14 +277,14 @@
 
                     </h2>
                     <div class="badge badge-secondary">Popular</div>
-                    <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                    <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                     <p>Ayudanos a crear una pagina
                         <br>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates nulla, hic
                         blanditiis vel aperiam provident quod illo dolore rem debitis explicabo, recusandae, sint
                         perferendis mollitia possimus aut quasi repudiandae.
                     </p>
-                    <div class="card-actions justify-end">
+                    <div class="justify-end card-actions">
                         <div class="badge badge-outline">Tecnologia</div>
                         <div class="badge badge-outline">Web</div>
                     </div>
@@ -303,14 +303,14 @@
 
                     </h2>
                     <div class="badge badge-secondary">Popular</div>
-                    <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                    <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                     <p>Ayudanos a crear una pagina
                         <br>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates nulla, hic
                         blanditiis vel aperiam provident quod illo dolore rem debitis explicabo, recusandae, sint
                         perferendis mollitia possimus aut quasi repudiandae.
                     </p>
-                    <div class="card-actions justify-end">
+                    <div class="justify-end card-actions">
                         <div class="badge badge-outline">Tecnologia</div>
                         <div class="badge badge-outline">Web</div>
                     </div>
@@ -328,14 +328,14 @@
 
                     </h2>
                     <div class="badge badge-secondary">Popular</div>
-                    <progress class="progress progress-success w-56" value="70" max="100"></progress>
+                    <progress class="w-56 progress progress-success" value="70" max="100"></progress>
                     <p>Ayudanos a crear una pagina
                         <br>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates nulla, hic
                         blanditiis vel aperiam provident quod illo dolore rem debitis explicabo, recusandae, sint
                         perferendis mollitia possimus aut quasi repudiandae.
                     </p>
-                    <div class="card-actions justify-end">
+                    <div class="justify-end card-actions">
                         <div class="badge badge-outline">Tecnologia</div>
                         <div class="badge badge-outline">Web</div>
                     </div>
@@ -354,7 +354,7 @@
 
     <!-- footer -->
 
-    <footer class="footer p-10 space-x-auto max-lg:justify-items-center">
+    <footer class="p-10 footer space-x-auto max-lg:justify-items-center">
         <aside>
             <img src="img/foteer.png" alt="">
             <p class="text-[#206A5D]">StarSeed.<br> 2024</p>
